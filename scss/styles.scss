@@ -181,6 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   background: #2a2a2e;
   .newsletter_inner {
+    max-width: 90%;
     width: 600px;
     margin: 0 auto;
   }
@@ -329,6 +330,53 @@ h1, h2, h3, h4, h5, h6 {
       }
       .post_info {
         font-size: .65em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 575px){
+    #banner {
+      #banner_content_wrapper {
+        display: block;
+        #poster {
+          width: 250px;
+          float: none;
+          display: block;
+          margin: 0 auto;
+        }
+        #content {
+          width: 100%;
+          margin: 1em auto 0 auto;
+        }
+      }
+    }
+
+    #top_movies, #top_shows {
+      margin-bottom: 2em;
+    }
+
+    .row {
+      .post {
+        width: 250px;
+        margin: 0 auto 2em auto;
+        float: none;
+      }
+    }
+
+    #newsletter {
+      padding: 3em 0;
+      h2 {
+        font-size: 1.35em;
+      }
+      .sign_up_form {
+        margin-top: 2em;
+        input[type="text"], input[type="email"] {
+          width: 90%;
+          margin: 0 0 1em 0;
+        }
+        .button {
+          margin-top: 2em;
+        }
       }
     }
   }
