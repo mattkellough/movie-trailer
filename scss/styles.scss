@@ -304,4 +304,33 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+
+  #top_movies, #top_shows {
+    padding: 3em 0;
+    header {
+      padding: 0 0 1.5em 1.25%;
+      h2 {
+        font-size: 1.5em;
+      }
+      .view_more {
+        margin: .75em 2.25% 0 0;
+      }
+    }
+  }
+
+  .row {
+    width: 100%;
+    .post {
+      width: 30.6%;
+      margin: 0 1.25% 2em 1.25%;
+      .title {
+        font-size: 1em;
+        margin: .5em 0 0 0;
+      }
+      .post_info {
+        font-size: .65em;
+      }
+    }
+  }
+
 }
