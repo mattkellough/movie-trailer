@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.menu {
+  display: none;
+}
+
 #banner {
 	background: url(../images/banner_background.jpg);
 	background-repeat: no-repeat;
@@ -243,11 +247,17 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 768px) {
+  #main_nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+    float: right;
+    i {
+      font-size: 1.5em;
+      color: $main;
+      padding-top: 0.6em;
+    }
+  }
+}
